@@ -60,7 +60,7 @@ include: null
 exclude: null
 ignore: null
 # theme: landscape
-theme: cactus
+theme: next
 deploy:
   type: git
   repo: https://github.com/Xlawy/hexo_test.git
