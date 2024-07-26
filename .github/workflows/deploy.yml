@@ -38,7 +38,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com' 
       
-      - name: Deplot to Github Pages
+      - name: Deploy to Github Pages
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN}}
         run:
