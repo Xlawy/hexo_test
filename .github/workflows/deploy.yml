@@ -24,17 +24,17 @@ jobs:
         run: npm install
 
       - name: Install Hexo Git Deployer
-        run:
+        run: |
           npm install hexo-deployer-git --save
           npm install hexo-cli -g
 
       - name: Clean and Generate Static Files
-        run:
+        run: |
           hexo clean
           hexo generate
 
       - name: Configure Git
-        run:
+        run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com' 
       
